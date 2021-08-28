@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class AHero : public AUnit
 {
 	GENERATED_BODY()

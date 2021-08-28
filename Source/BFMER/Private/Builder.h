@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable)
 class ABuilder : public AUnit
 {
 	GENERATED_BODY()

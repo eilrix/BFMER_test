@@ -6,7 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "Unit.generated.h"
 
-UCLASS()
+UCLASS(Blueprintable)
 class AUnit : public AActor
 {
 	GENERATED_BODY()
