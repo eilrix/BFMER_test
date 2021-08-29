@@ -19,9 +19,13 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Mesh", meta = (AllowPrivateAccess = "true")) 
+	FString m_PrimaryAsset;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	virtual FPrimaryAssetId GetPrimaryAssetId() const override; 
 
 private:
 

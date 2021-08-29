@@ -28,7 +28,7 @@ public:
 	void SelectHero();
 
 	UFUNCTION(BlueprintCallable, Category="Unit Selection")
-	void AddToSelection(AUnit *unit);
+	bool AddToSelection(AUnit *unit);
 
 	UFUNCTION(BlueprintCallable, Category="Unit Selection")
 	void SelectSame();

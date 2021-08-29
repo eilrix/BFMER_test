@@ -12,6 +12,8 @@ AUnit::AUnit()
 
 	m_UnitMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("mesh"));
 	RootComponent = m_UnitMesh;
+
+	m_PrimaryAsset = "Undefined:Undefined";
 }
 
 // Called when the game starts or when spawned
@@ -28,3 +30,7 @@ void AUnit::Tick(float DeltaTime)
 
 }
 
+FPrimaryAssetId AUnit::GetPrimaryAssetId() const
+{
+	return FPrimaryAssetId(m_PrimaryAsset);
+}
